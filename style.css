@@ -1,32 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-
-form{
+    box-sizing: border-box; /* Add box-sizing to include padding and border in width/height */
+  }
+  
+  form {
     text-align: center;
-}
-
-body{
+  }
+  
+  body {
     background-color: #9EAD7C;
-}
-
-.inpt{
-    width: 400px;
+  }
+  
+  .inpt {
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 400px; /* Add max-width to control element on larger screens */
     height: 40px;
-    display: block;
-    margin:  0 auto;
+    margin: 0 auto;
     margin-top: 2%;
     font-size: 15px;
     color: rgb(71, 71, 71);
     border: 1px solid rgb(71, 71, 71);
     border-radius: 10px;
     padding: 4px;
-   
-}
-
-.sbmt{
-    width: 200px;
+  }
+  
+  .sbmt {
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 200px; /* Add max-width to control element on larger screens */
     height: 40px;
     background-color: #466D1D;
     border-radius: 7px;
@@ -34,55 +35,71 @@ body{
     margin-top: 1%;
     font-size: 15px;
     cursor: pointer;
-}
-
-.sbmt:hover{
+  }
+  
+  .sbmt:hover {
     background-color: #9EAD7C;
     color: #466D1D;
     border: 1px solid #466D1D;
     cursor: pointer;
-}
-
-.eyes{
-    height: 482px;
-    width: 330px;
+  }
+  
+  .eyes {
+    height: auto; /* Adjust height as needed for responsiveness */
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 330px; /* Add max-width to control element on larger screens */
     position: absolute;
     bottom: 0%;
-}
-
-.home{
-    height: 482px;
-    width: 330px;
+  }
+  
+  .home {
+    height: auto; /* Adjust height as needed for responsiveness */
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 330px; /* Add max-width to control element on larger screens */
     transform: rotate(180deg);
     position: absolute;
     top: 0%;
     right: 0%;
-
-}
-
-#error{
+  }
+  
+  #error {
     color: red;
     display: block;
-}
-
-.box{
+  }
+  
+  .box {
     border-radius: 20px;
-    width: 250px;
+    width: 90%; /* Use percentage for responsiveness */
+    max-width: 250px; /* Add max-width to control element on larger screens */
     background-color: #466D1D;
     margin: 5px;
     padding: 2%;
     position: relative;
-}
-
-.container{
+  }
+  
+  .container {
     display: flex;
     flex-wrap: wrap;
-}
-
-.done{
-    background-color:#9EAD7C ;
+  }
+  
+  .done {
+    background-color: #9EAD7C;
     width: 45px;
     height: 20px;
     border-radius: 7px;
     border: none;
-}
+  }
+  
+  @media screen and (max-width: 767px) {
+    .home {
+      display: none;
+    }
+    /* Additional styles for smaller screens if needed */
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .home {
+      display: none;
+    }
+    /* Additional styles for tablets if needed */
+  }
